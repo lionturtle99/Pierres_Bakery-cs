@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
 using System;
 using PierresBakery.Models;
 
@@ -29,7 +27,7 @@ namespace PierresBakery
           int pastryCost = pastry.CostOfPastry(pastries);
           Console.WriteLine("Fantastic. That'll be $"+breadCost+" for the bread, and $"+pastryCost+" for the pastries");
           Console.WriteLine("");
-          Console.WriteLine("Would you to order more?");
+          Console.WriteLine("Do you want to order more?");
           string orderAgain = Console.ReadLine();
           if (orderAgain.Contains("no"))
           {
