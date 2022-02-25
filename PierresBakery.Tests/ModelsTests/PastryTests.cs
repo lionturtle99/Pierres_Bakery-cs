@@ -17,7 +17,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void ReturnCost_LoopThroughUserOrder_Int()
     {
-      Assert.AreEqual(1, testPastry.CostOfPastry(6));
+      Assert.AreEqual(6, testPastry.CostOfPastry(6));
     }
   }
 }

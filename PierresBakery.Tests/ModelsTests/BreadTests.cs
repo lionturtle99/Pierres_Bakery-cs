@@ -17,7 +17,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void ReturnCost_LoopThroughUserOrder_Int()
     {
-      Assert.AreEqual(1, testBread.CostOfBread(5));
+      Assert.AreEqual(5, testBread.CostOfBread(5));
     }
   }
 }
