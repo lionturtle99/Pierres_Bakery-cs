@@ -8,11 +8,16 @@ namespace PierresBakery.Tests
   [TestClass]
   public class PastryTests
   {
+    Pastry testPastry = new Pastry();
     [TestMethod]
   public void CreateClass_CreateAnInstanceOfAClass_Pastry()
     {
-      Pastry newPastry = new Pastry();
-      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+    } 
+    [TestMethod]
+    public void TakeUserInput_ReturnUserPrice_Int()
+    {
+      Assert.AreEqual(5, testPastry.CostOfPastry(1));
     }
   }
 }
