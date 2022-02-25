@@ -8,7 +8,7 @@ namespace PierresBakery.Models
   {
     public int CostOfBread(int userInput)
     {
-      return 10;
+      return 5;
     }
   }
 } 
