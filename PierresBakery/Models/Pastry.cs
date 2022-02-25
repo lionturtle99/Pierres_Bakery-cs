@@ -6,9 +6,14 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    public int CostOfPastry(int userInput)
+    public int CostOfPastry(int order)
     {
-      return 2;
+      int cost = 0;
+      for (int i=1;i<=order;i++)
+      {
+        cost++;
+      } 
+      return cost;
     }
   }
 } 
