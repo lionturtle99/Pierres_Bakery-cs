@@ -15,9 +15,14 @@ namespace PierresBakery.Tests
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
     [TestMethod]
-    public void ReturnCost_LoopThroughUserOrder_Int()
+    public void ReturnCost_GoToIfStatement_Int()
     {
-      Assert.AreEqual(5, testBread.CostOfBread(5));
+      Assert.AreEqual(1, testBread.CostOfBread(6));
+    }
+    [TestMethod]
+    public void ReturnCost_GoToElseStatement_Int()
+    {
+      Assert.AreEqual(1, testBread.CostOfBread(1));
     }
   }
 }

@@ -11,7 +11,14 @@ namespace PierresBakery.Models
       int cost = 0;
       for (int i=1;i<=order;i++)
       {
-        cost++;
+        if (i % 3 == 0)
+        {
+          cost=cost;
+        }
+        else
+        {
+          cost+=5;
+        }
       } 
       return cost;
     }
