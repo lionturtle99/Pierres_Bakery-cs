@@ -13,12 +13,9 @@ namespace PierresBakery.Models
       {
         if (i % 3 == 0)
         {
-          cost=cost;
+          cost -= 5;
         }
-        else
-        {
-          cost+=5;
-        }
+        cost+=5;
       } 
       return cost;
     }

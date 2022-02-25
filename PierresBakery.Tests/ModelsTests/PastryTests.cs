@@ -17,12 +17,12 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void ReturnCost_GoToIfStatement_Int()
     {
-      Assert.AreEqual(1, testPastry.CostOfPastry(6));
+      Assert.AreEqual(10, testPastry.CostOfPastry(6));
     }
     [TestMethod]
     public void ReturnCost_GoToElseStatement_Int()
     {
-      Assert.AreEqual(1, testPastry.CostOfPastry(2));
+      Assert.AreEqual(4, testPastry.CostOfPastry(2));
     }
   }
 }
