@@ -6,20 +6,35 @@ namespace PierresBakery.Tests
   [TestClass]
   public class BreadTests
   {
-    Bread testBread = new Bread();
+    
     [TestMethod]
     public void CreateClass_CreateAnInstanceOfAClass_Bread()
     {
+      Bread testBread = new Bread("test");
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
+
     [TestMethod]
     public void ReturnCost_GoToIfStatement_Int()
     {
+      Bread testBread = new Bread("test");
       Assert.AreEqual(20, testBread.CostOfBread(6));
     }
     [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name = "customer";
+
+      Bread testBread = new Bread(name);
+      string result = testBread.Name;
+
+      Assert.AreEqual("good fail", result);
+    }
+
+    [TestMethod]
     public void ReturnCost_GoToElseStatement_Int()
     {
+      Bread testBread = new Bread("test");
       Assert.AreEqual(5, testBread.CostOfBread(1));
     }
   }

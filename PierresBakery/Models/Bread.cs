@@ -2,6 +2,12 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
+    public string Name { set; get; }
+
+    public Bread(string name)
+    {
+      Name = name;
+    }
     public int CostOfBread(int order)
     {
       int cost = 0;
@@ -12,8 +18,8 @@ namespace PierresBakery.Models
           cost -= 5;
         }
         cost+=5;
-      } 
+      }
       return cost;
     }
   }
-} 
+}
