@@ -20,6 +20,7 @@ namespace PierresBakery.Tests
       Bread testBread = new Bread("test");
       Assert.AreEqual(20, testBread.CostOfBread(6));
     }
+
     [TestMethod]
     public void GetName_ReturnsName_String()
     {
@@ -29,6 +30,20 @@ namespace PierresBakery.Tests
       string result = testBread.Name;
 
       Assert.AreEqual(name, result);
+    }
+
+
+    [TestMethod]
+    public void SetName_SetName_String()
+    {
+      string name = "Kylo";
+      Bread testBread = new Bread(name);
+
+      string updatedName = "Peter";
+      testBread.Name = updatedName;
+      string result = testBread.Name;
+
+      Assert.AreEqual("good fail", result);
     }
 
     [TestMethod]

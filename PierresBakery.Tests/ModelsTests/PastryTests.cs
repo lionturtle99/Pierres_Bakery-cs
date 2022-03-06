@@ -26,6 +26,19 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void SetName_SetName_String()
+    {
+      string name = "Ren";
+      Pastry testPastry = new Pastry(name);
+
+      string updatedName = "Niu";
+      testPastry.Name = updatedName;
+      string result = testPastry.Name;
+
+      Assert.AreEqual("good fail", result);
+    }
+
+    [TestMethod]
     public void ReturnCost_GoToIfStatement_Int()
     {
       string name = "customer";
