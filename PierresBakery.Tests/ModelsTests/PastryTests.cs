@@ -28,14 +28,14 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void SetName_SetName_String()
     {
-      string name = "Ren";
+      string name = "Kylo";
       Pastry testPastry = new Pastry(name);
 
-      string updatedName = "Niu";
+      string updatedName = "Ren";
       testPastry.Name = updatedName;
       string result = testPastry.Name;
 
-      Assert.AreEqual("good fail", result);
+      Assert.AreEqual(updatedName, result);
     }
 
     [TestMethod]

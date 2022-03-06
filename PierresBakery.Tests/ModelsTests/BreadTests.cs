@@ -43,7 +43,7 @@ namespace PierresBakery.Tests
       testBread.Name = updatedName;
       string result = testBread.Name;
 
-      Assert.AreEqual("good fail", result);
+      Assert.AreEqual(updatedName, result);
     }
 
     [TestMethod]
