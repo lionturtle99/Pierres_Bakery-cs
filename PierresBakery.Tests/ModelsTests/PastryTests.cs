@@ -22,7 +22,7 @@ namespace PierresBakery.Tests
       Pastry testPastry = new Pastry(name);
       string result = testPastry.Name;
 
-      Assert.AreEqual("good fail", result);
+      Assert.AreEqual(name, result);
     }
 
     [TestMethod]
