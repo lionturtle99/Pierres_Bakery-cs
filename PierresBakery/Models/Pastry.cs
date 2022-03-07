@@ -34,8 +34,7 @@ namespace PierresBakery.Models
           Free += 1;
         }
       }
-      int fail = 5;
-      return fail;
+      return Free;
     }
   }
 } 
