@@ -9,48 +9,49 @@ namespace PierresBakery.Tests
     [TestMethod]
   public void CreateClass_CreateAnInstanceOfAClass_Pastry()
     {
-      string name = "customer";
-      Pastry testPastry = new Pastry(name);
+      string customer = "john";
+      Pastry testPastry = new Pastry(customer);
+
       Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     } 
 
     [TestMethod]
-    public void GetName_ReturnsName_String()
+    public void GetCustomer_ReturnsCustomer_String()
     {
-      string name = "customer";
+      string customer = "Neo";
+      Pastry testPastry = new Pastry(customer);
 
-      Pastry testPastry = new Pastry(name);
-      string result = testPastry.Name;
+      string result = testPastry.Customer;
 
-      Assert.AreEqual(name, result);
+      Assert.AreEqual(customer, result);
     }
 
     [TestMethod]
-    public void SetName_SetName_String()
+    public void SetCustomer_SetCustomer_String()
     {
-      string name = "Kylo";
-      Pastry testPastry = new Pastry(name);
+      string customer = "Kylo";
+      Pastry testPastry = new Pastry(customer);
 
-      string updatedName = "Ren";
-      testPastry.Name = updatedName;
-      string result = testPastry.Name;
+      string updatedCustomer = "Ren";
+      testPastry.Customer = updatedCustomer;
+      string result = testPastry.Customer;
 
-      Assert.AreEqual(updatedName, result);
+      Assert.AreEqual(updatedCustomer, result);
     }
 
     [TestMethod]
     public void ReturnCost_GoToIfStatement_Int()
     {
-      string name = "customer";
-      Pastry testPastry = new Pastry(name);
+      Pastry testPastry = new Pastry("test");
+
       Assert.AreEqual(10, testPastry.CostOfPastry(6));
     }
 
     [TestMethod]
     public void ReturnCost_GoToElseStatement_Int()
     {
-      string name = "customer";
-      Pastry testPastry = new Pastry(name);
+      Pastry testPastry = new Pastry("test");
+
       Assert.AreEqual(4, testPastry.CostOfPastry(2));
     }
   }

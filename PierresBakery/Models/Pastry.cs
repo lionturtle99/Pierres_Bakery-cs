@@ -3,24 +3,38 @@ namespace PierresBakery.Models
   public class Pastry
   {
 
-    public string Name { set; get; }
+    public int Cost { set; get; }
+    public int Free { set; get; }
+    public string Customer { set; get; }
 
-    public Pastry(string name)
+    public Pastry(string customer)
     {
-      Name = name;
+      Customer = customer;
+      Cost = 0;
+      Free = 0;
     }
-    public int CostOfPastry(int order)
+        public int CostOfPastry(int order)
     {
-      int cost = 0;
       for (int i=1;i<=order;i++)
       {
         if (i % 3 == 0)
         {
-          cost--;
+          Cost--;
         }
-        cost+=2;
-      } 
-      return cost;
+        Cost+=2;
+      }
+      return Cost;
+    }
+    public int FreePastry(int order)
+    {
+      for (int i=1;i<=order;i++)
+      {
+        if (i % 3 == 0)
+        {
+          Free += 1;
+        }
+      }
+      return Free;
     }
   }
 } 
