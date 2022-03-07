@@ -17,7 +17,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetCustomer_ReturnsCustomer_String()
     {
-      string customer = "customer";
+      string customer = "john";
 
       Bread testBread = new Bread(customer);
       string result = testBread.Customer;
@@ -60,6 +60,14 @@ namespace PierresBakery.Tests
       Bread testBread = new Bread("test");
 
       Assert.AreEqual(1, testBread.FreeBread(3));
+    }
+
+    [TestMethod]
+    public void ReturnFreeBread_GoToElseStatement_Int()
+    {
+      Bread testBread = new Bread("test");
+
+      Assert.AreEqual(5, testBread.FreeBread(1));
     }
   }
 }
