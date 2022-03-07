@@ -54,5 +54,12 @@ namespace PierresBakery.Tests
       Assert.AreEqual(5, testBread.CostOfBread(1));
     }
 
+    [TestMethod]
+    public void ReturnFreeBread_GoToIfStatement_Int()
+    {
+      Bread testBread = new Bread("test");
+
+      Assert.AreEqual(1, testBread.FreeBread(3));
+    }
   }
 }
