@@ -67,7 +67,7 @@ namespace PierresBakery.Tests
     {
       Bread testBread = new Bread("test");
 
-      Assert.AreEqual(5, testBread.FreeBread(1));
+      Assert.AreEqual(0, testBread.FreeBread(1));
     }
   }
 }
